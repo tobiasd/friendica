@@ -170,6 +170,9 @@ function import_account(&$a, $file) {
 			}
 		}
 		if ($contact['uid'] == $olduid && $contact['self'] == '0') {
+			// before adding the contact to the DB mark the photo
+		        // ouit of date so that the poller fetches it anew
+			$contact["avatar-date"] = "0000-00-00 00:00:00";
 			switch ($contact['network']) {
 				case NETWORK_DFRN:
 					//  send relocate message (below)
