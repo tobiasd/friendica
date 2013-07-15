@@ -637,7 +637,7 @@ function admin_page_users_post(&$a){
 		return;
 	    }
 	    $nu = $result['user'];
-	    $email_tpl = get_intltext_template("register_open_eml.tpl");
+	    $email_tpl = get_intltext_template("register_adminadd_eml.tpl");
 	    $email_tpl = replace_macros($email_tpl, array(
 		'$sitename' => $a->config['sitename'],
 		'$siteurl' =>  $a->get_baseurl(),
