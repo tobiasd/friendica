@@ -1,6 +1,6 @@
 
-Dear {{$[username}},
-	the administrator of {{$sitename}} has added an account for you.
+Dear {{$username}},
+	the administrator of {{$sitename}} has set up an account for you.
 
 The login details are as follows:
 
